@@ -17,7 +17,7 @@ app.listen(port, () => {
 })
 */
 (async () => {
-  const files = await fs_readdir('.');
+  const files = await fs_ls('.');
   for (let fn of files) {
     console.log(fn);
   }
